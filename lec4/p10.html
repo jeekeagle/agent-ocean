@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>约束性质对比</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>约束性质对比</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <line x1="864" y1="40" x2="864" y2="620" stroke="#E5E5E5" stroke-width="2"/>
+      <!-- left: port -->
+      <text x="0" y="80" font-size="34" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">港口</text>
+      <text x="0" y="170" font-size="26" fill="#555">潮汐 · 泊位窗口 · 船期</text>
+      <path d="M 0 320 Q 102 230 205 320 T 410 320 T 615 320 T 820 320" fill="none" stroke="#1F4E79" stroke-width="5"/>
+      <text x="0" y="440" font-size="26" fill="#777">有表可查 · 有预报可依</text>
+      <text x="0" y="510" font-size="30" font-weight="700" fill="#1F4E79">约束可预测</text>
+      <text x="0" y="560" font-size="28" fill="#555">→ 可建模 · 可优化</text>
+      <!-- right: deep sea -->
+      <text x="920" y="80" font-size="34" font-weight="700" fill="#555" font-family="Noto Serif SC,SimSun,serif">深海</text>
+      <text x="920" y="170" font-size="26" fill="#555">压力 · 黑暗 · 通信延迟</text>
+      <polyline points="920,300 960,380 990,260 1030,400 1070,280 1110,390 1150,250 1190,410 1230,290 1270,370 1310,240 1350,400 1390,270 1430,380 1470,260 1510,410 1550,300 1590,360 1630,250 1680,340" fill="none" stroke="#555" stroke-width="4"/>
+      <text x="920" y="440" font-size="26" fill="#777">突发 · 不可回避</text>
+      <text x="920" y="510" font-size="30" font-weight="700" fill="#555">约束不可预测</text>
+      <text x="920" y="560" font-size="28" fill="#555">→ 无法建模 · 只能硬扛</text>
+      <!-- bottom -->
+      <line x1="0" y1="680" x2="1728" y2="680" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="864" y="760" font-size="30" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">约束性质不同 — 迁移难度不同</text>
+      <text x="864" y="815" font-size="26" fill="#777" text-anchor="middle">港口跑在最前 · 深海落在最后</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

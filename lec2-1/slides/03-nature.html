@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P03 · 自然约束</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; position: relative; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 64px 130px 0; }
+  .foot { margin: 36px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+  .wave { position: absolute; left: 0; bottom: 20px; }
+</style>
+</head>
+<body>
+  <p class="assertion">自然约束</p>
+
+  <svg class="figure" width="1660" height="600" viewBox="0 0 1660 600" fill="none">
+    <!-- 左：海水是墙 -->
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">SEA WATER IS THE WALL</text>
+
+    <g font-family="Noto Sans SC" font-size="24">
+      <text x="0" y="90" fill="#9B998F">地月、火星，信号往返</text>
+      <text x="380" y="90" fill="#1F4E79" font-weight="500">✓ 已实现</text>
+      <text x="0" y="145" fill="#55534E">无线电波穿不透海水</text>
+      <text x="380" y="145" fill="#141414" font-weight="500">✗ 水下失效</text>
+      <text x="0" y="200" fill="#55534E">GPS 信号水下完全失效</text>
+      <text x="380" y="200" fill="#141414" font-weight="500">✗ 用不了</text>
+    </g>
+
+    <!-- 唯一载体 -->
+    <rect x="0" y="250" width="500" height="120" rx="4" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+    <text x="40" y="305" font-family="Noto Serif SC" font-weight="600" font-size="30" fill="#1F4E79">声波</text>
+    <text x="40" y="350" font-family="Noto Sans SC" font-size="23" fill="#55534E">唯一能远距离传播的载体 ·「深海的信息高速公路」</text>
+
+    <!-- 带宽对撞 -->
+    <text x="0" y="450" font-family="JetBrains Mono" font-size="19" letter-spacing="3" fill="#9B998F">BANDWIDTH · 羊肠小道</text>
+    <text x="0" y="545" font-family="JetBrains Mono" font-size="96" font-weight="500" fill="#1F4E79">3</text>
+    <text x="82" y="545" font-family="JetBrains Mono" font-size="34" fill="#9B998F">kbps</text>
+    <text x="240" y="500" font-family="Noto Sans SC" font-size="23" fill="#9B998F">水声信道</text>
+    <text x="300" y="545" font-family="Noto Serif SC" font-weight="700" font-size="46" fill="#141414">不够</text>
+    <text x="440" y="545" font-family="JetBrains Mono" font-size="96" font-weight="500" fill="#141414">50</text>
+    <text x="552" y="545" font-family="JetBrains Mono" font-size="34" fill="#9B998F">kbps</text>
+    <text x="660" y="500" font-family="Noto Sans SC" font-size="23" fill="#9B998F">一段低清视频的底线</text>
+    <text x="660" y="545" font-family="Noto Sans SC" font-size="23" fill="#55534E">大货车走羊肠小道</text>
+
+    <!-- 右：三笔账 -->
+    <line x1="810" y1="30" x2="810" y2="570" stroke="#E8E6E1" stroke-width="1"/>
+
+    <text x="880" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">THE OTHER TWO BILLS</text>
+
+    <text x="880" y="105" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#141414">延迟 · 重传机制失效</text>
+    <text x="880" y="155" font-family="Noto Sans SC" font-size="24" fill="#55534E">声速慢：两三公里，信号<tspan font-weight="500" fill="#141414">约 2 秒</tspan>才到</text>
+    <text x="880" y="197" font-family="Noto Sans SC" font-size="24" fill="#55534E">传错了要重传，一个来回<tspan font-weight="500" fill="#1F4E79">五六秒</tspan></text>
+
+    <text x="880" y="290" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#141414">干扰 · 回声迷宫</text>
+    <text x="880" y="340" font-family="Noto Sans SC" font-size="24" fill="#55534E">声波在海面海底来回反射，</text>
+    <text x="880" y="382" font-family="Noto Sans SC" font-size="24" fill="#55534E">接收端听到的是<tspan font-weight="500" fill="#141414">一团乱麻</tspan></text>
+
+    <text x="880" y="475" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#141414">能量 · 定位，同时失效</text>
+    <text x="880" y="525" font-family="Noto Sans SC" font-size="24" fill="#55534E">供电要重做理论研究；卫星导航</text>
+    <text x="880" y="567" font-family="Noto Sans SC" font-size="24" fill="#55534E">用不了，只能组合导航</text>
+  </svg>
+
+  <p class="foot">陆地上靠<b>「联网 + 定位 + 供电」</b>就能解决的问题，到了海里，全都要<b>从零开始</b>。</p>
+
+  <svg class="wave" width="1920" height="40" viewBox="0 0 1920 40" fill="none">
+    <path d="M0 20 Q 60 6 120 20 T 240 20 T 360 20 T 480 20 T 600 20 T 720 20 T 840 20 T 960 20 T 1080 20 T 1200 20 T 1320 20 T 1440 20 T 1560 20 T 1680 20 T 1800 20 T 1920 20" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+  </svg>
+</body>
+</html>

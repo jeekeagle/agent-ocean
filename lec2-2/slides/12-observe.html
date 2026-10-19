@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>海洋观测</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; padding-top: 96px; }
+  .assertion { margin: 0 130px; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 70px 130px 0; }
+  .foot { margin: 38px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+</style>
+<style>
+  .course-badge { position: absolute; top: 72px; right: 130px; z-index: 60;
+    display: flex; align-items: center; gap: 13px; }
+  .course-badge .cb-text { font-family: "Noto Sans SC", sans-serif; font-size: 22px;
+    font-weight: 500; color: #9B998F; letter-spacing: 0.06em; white-space: nowrap; }
+</style></head>
+<body><div class="course-badge"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="11" y1="11" x2="19" y2="7" stroke="#1F4E79" stroke-width="1.6"/><line x1="19" y1="7" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.6"/><line x1="11" y1="11" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="2 2.4"/><line x1="19" y1="7" x2="19" y2="20" stroke="#1F4E79" stroke-width="1.6"/><circle cx="11" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="7" r="2.7" fill="#1F4E79"/><circle cx="27" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="20" r="2.7" fill="#1F4E79"/><path d="M5 29 Q9.5 25.5 14 29 T23 29 T33 29" stroke="#1F4E79" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M5 34 Q9.5 31 14 34 T23 34 T33 34" stroke="#1F4E79" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/></svg><span class="cb-text">人工智能 × 具身智能 · 赋能海洋</span></div>
+  <p class="assertion">海洋观测</p>
+
+  <svg class="figure" width="1660" height="600" viewBox="0 0 1660 600" fill="none">
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">LAYER 3 · SEEING THE INVISIBLE</text>
+
+    <!-- 约束条 -->
+    <rect x="0" y="60" width="1660" height="80" rx="4" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+    <text x="40" y="110" font-family="Noto Sans SC" font-size="26" fill="#55534E">全球海洋观测每年产生 <tspan font-family="JetBrains Mono" font-weight="500" fill="#141414">PB 级</tspan>原始数据，人工分析要耗时<tspan font-weight="500" fill="#141414">数年</tspan>；深海无光、地形复杂，观测长期跟不上</text>
+
+    <line x1="545" y1="180" x2="545" y2="470" stroke="#E8E6E1" stroke-width="1.5"/>
+    <line x1="1115" y1="180" x2="1115" y2="470" stroke="#E8E6E1" stroke-width="1.5"/>
+
+    <!-- 第一件：看完 -->
+    <g>
+      <text x="30" y="228" font-family="JetBrains Mono" font-size="22" font-weight="500" fill="#1F4E79">01</text>
+      <text x="30" y="290" font-family="Noto Serif SC" font-weight="700" font-size="34" fill="#141414">看不完 → 看完</text>
+      <line x1="30" y1="316" x2="515" y2="316" stroke="#E8E6E1" stroke-width="1.5"/>
+      <text x="30" y="372" font-family="Noto Sans SC" font-size="25" fill="#55534E">机器实时处理 PB 级数据</text>
+      <text x="30" y="418" font-family="Noto Sans SC" font-size="25" fill="#55534E">计算机视觉自动检测：</text>
+      <text x="30" y="460" font-family="Noto Sans SC" font-size="24" fill="#9B998F">赤潮范围 · 船舶类型 · 溢油区域</text>
+    </g>
+
+    <!-- 第二件：看见 -->
+    <g>
+      <text x="600" y="228" font-family="JetBrains Mono" font-size="22" font-weight="500" fill="#1F4E79">02</text>
+      <text x="600" y="290" font-family="Noto Serif SC" font-weight="700" font-size="34" fill="#141414">看不见 → 看见</text>
+      <line x1="600" y1="316" x2="1085" y2="316" stroke="#E8E6E1" stroke-width="1.5"/>
+      <text x="600" y="372" font-family="Noto Sans SC" font-size="25" fill="#55534E">「透明海洋」· 像给海洋做 CT</text>
+      <text x="600" y="418" font-family="Noto Sans SC" font-size="25" fill="#55534E"><tspan font-weight="500" fill="#141414">6000 米级</tspan>无人遥控潜水器「海琴」</text>
+      <text x="600" y="460" font-family="Noto Sans SC" font-size="24" fill="#9B998F">潜标 · 海床基平台 · 无人潜水器</text>
+    </g>
+
+    <!-- 第三件：算出 -->
+    <g>
+      <text x="1170" y="228" font-family="JetBrains Mono" font-size="22" font-weight="500" fill="#1F4E79">03</text>
+      <text x="1170" y="290" font-family="Noto Serif SC" font-weight="700" font-size="34" fill="#141414">看不清 → 算出</text>
+      <line x1="1170" y1="316" x2="1645" y2="316" stroke="#E8E6E1" stroke-width="1.5"/>
+      <text x="1170" y="372" font-family="Noto Sans SC" font-size="25" fill="#55534E">大模型真正发力的一层</text>
+      <text x="1170" y="418" font-family="Noto Sans SC" font-size="25" fill="#55534E">台风路径 · 赤潮发生</text>
+      <text x="1170" y="460" font-family="Noto Sans SC" font-size="25" fill="#55534E">珊瑚礁退化趋势</text>
+    </g>
+
+    <!-- 底部 -->
+    <line x1="0" y1="510" x2="1660" y2="510" stroke="#E8E6E1" stroke-width="1.5"/>
+    <text x="0" y="566" font-family="Noto Sans SC" font-size="27" fill="#55534E">看不见，就管不了——补盲，是 AI 射程<tspan font-weight="500" fill="#1F4E79">最远</tspan>的地方。</text>
+  </svg>
+
+  <p class="foot">第三层恰恰是 AI 射程最远的地方——<b>补盲</b>。</p>
+</body>
+</html>

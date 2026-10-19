@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>边缘计算链路</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>边缘计算链路</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+      </defs>
+      <!-- stage 1 -->
+      <rect x="0" y="180" width="360" height="300" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+      <rect x="0" y="180" width="360" height="6" fill="#1F4E79"/>
+      <text x="36" y="240" class="m" font-size="24" fill="#AAA">01</text>
+      <text x="36" y="310" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">声呐采集</text>
+      <text x="36" y="370" font-size="24" fill="#555">水下声呐终端</text>
+      <text x="36" y="410" font-size="24" fill="#555">高分辨率原始数据</text>
+      <!-- stage 2 -->
+      <rect x="456" y="180" width="360" height="300" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+      <rect x="456" y="180" width="360" height="6" fill="#1F4E79"/>
+      <text x="492" y="240" class="m" font-size="24" fill="#AAA">02</text>
+      <text x="492" y="310" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">边缘解析</text>
+      <text x="492" y="370" font-size="24" fill="#555">设备端运行 AI 算法</text>
+      <text x="492" y="410" font-size="24" fill="#555">实时三维点云解析</text>
+      <!-- stage 3 -->
+      <rect x="912" y="180" width="360" height="300" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+      <rect x="912" y="180" width="360" height="6" fill="#1F4E79"/>
+      <text x="948" y="240" class="m" font-size="24" fill="#AAA">03</text>
+      <text x="948" y="310" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">结构化结果</text>
+      <text x="948" y="370" font-size="24" fill="#555">数量 · 分布 · 规格</text>
+      <text x="948" y="410" font-size="24" fill="#555">生物量估算值</text>
+      <!-- stage 4 -->
+      <rect x="1368" y="180" width="360" height="300" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+      <rect x="1368" y="180" width="360" height="6" fill="#1F4E79"/>
+      <text x="1404" y="240" class="m" font-size="24" fill="#AAA">04</text>
+      <text x="1404" y="310" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">云平台</text>
+      <text x="1404" y="370" font-size="24" fill="#555">5G 回传</text>
+      <text x="1404" y="410" font-size="24" fill="#555">监测可视化</text>
+      <!-- arrows -->
+      <g stroke="#1F4E79" stroke-width="3">
+        <line x1="372" y1="330" x2="444" y2="330" marker-end="url(#ar)"/>
+        <line x1="828" y1="330" x2="900" y2="330" marker-end="url(#ar)"/>
+        <line x1="1284" y1="330" x2="1356" y2="330" marker-end="url(#ar)"/>
+      </g>
+      <rect x="1252" y="240" width="100" height="44" fill="#fff"/>
+      <text x="1302" y="226" font-size="24" font-weight="700" fill="#1F4E79" text-anchor="middle">只传结果</text>
+      <!-- bottom -->
+      <line x1="0" y1="580" x2="1728" y2="580" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="864" y="670" font-size="30" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">边缘跑算法 · 只回传结构化结果</text>
+      <text x="864" y="730" font-size="28" fill="#555" text-anchor="middle">→ 降低带宽需求 · 降低传输延迟</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

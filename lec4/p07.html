@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>全流程无人化闭环</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>全流程无人化闭环</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <line x1="630" y1="60" x2="630" y2="460" stroke="#E5E5E5" stroke-width="2"/>
+      <line x1="1210" y1="60" x2="1210" y2="460" stroke="#E5E5E5" stroke-width="2"/>
+      <!-- stage 1 -->
+      <text x="120" y="100" class="m" font-size="26" fill="#AAA">01</text>
+      <text x="120" y="170" font-size="38" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">航行</text>
+      <text x="120" y="230" font-size="26" fill="#555">「智飞」号智能航行系统</text>
+      <text x="120" y="278" font-size="26" fill="#555">自主航线规划与避碰</text>
+      <!-- stage 2 -->
+      <text x="700" y="100" class="m" font-size="26" fill="#AAA">02</text>
+      <text x="700" y="170" font-size="38" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">靠泊</text>
+      <text x="700" y="230" font-size="26" fill="#555">真空式自动系泊系统</text>
+      <text x="700" y="330" class="m" font-size="56" font-weight="700" fill="#1F4E79">30 秒</text>
+      <text x="700" y="380" font-size="24" fill="#777">完成船舶自动固定</text>
+      <!-- stage 3 -->
+      <text x="1280" y="100" class="m" font-size="26" fill="#AAA">03</text>
+      <text x="1280" y="170" font-size="38" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">装卸</text>
+      <text x="1280" y="230" font-size="26" fill="#555">桥吊 · AGV · 轨道吊协同</text>
+      <text x="1280" y="278" font-size="26" fill="#555">毫秒级响应作业指令</text>
+      <!-- loop -->
+      <path d="M 340 470 L 340 560 L 1484 560 L 1484 470" fill="none" stroke="#1F4E79" stroke-width="3"/>
+      <polygon points="1477,470 1491,470 1484,456" fill="#1F4E79"/>
+      <rect x="620" y="530" width="580" height="60" fill="#fff"/>
+      <text x="910" y="572" font-size="28" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">全流程无人化闭环</text>
+      <text x="910" y="646" font-size="26" fill="#777" text-anchor="middle">2026 年 2 月 · 中国港口史上首次</text>
+      <!-- bottom -->
+      <line x1="0" y1="700" x2="1728" y2="700" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="864" y="790" class="m" font-size="34" font-weight="700" fill="#1F4E79" text-anchor="middle">全年缩短靠泊时间 200+ 小时</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

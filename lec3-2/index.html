@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>人工智能和具身智能交叉融合赋能海洋产业发展 · 模块 3.2</title>
+<!--
+  deck_index — 多文件 slide deck 聚合外壳
+  键盘：← / → / Space / PgUp / PgDown / Home / End / 1-9 跳页 / O 概览墙 / Esc 关概览 / P 打印
+-->
+<script>
+  window.DECK_MANIFEST = [
+    { file: "slides/01-cover.html",       label: "把活接过去" },
+    { file: "slides/02-two-lines.html",   label: "两条技术线" },
+    { file: "slides/03-definition.html",  label: "具身定义" },
+    { file: "slides/04-strategy.html",    label: "国家战略" },
+    { file: "slides/05-industry.html",    label: "产业热度" },
+    { file: "slides/06-vla.html",         label: "VLA 模型" },
+    { file: "slides/07-world.html",       label: "世界模型" },
+    { file: "slides/08-flywheel.html",    label: "数据飞轮" },
+    { file: "slides/09-inversion.html",   label: "路径反置" },
+    { file: "slides/10-netclean.html",    label: "网箱清洗" },
+    { file: "slides/11-deepwork.html",    label: "深海重装" },
+    { file: "slides/12-wind.html",        label: "风电运维" },
+    { file: "slides/13-cable.html",       label: "海底电缆" },
+    { file: "slides/14-pasture.html",     label: "海洋牧场" },
+    { file: "slides/15-vc.html",          label: "资本逻辑" },
+    { file: "slides/16-convergence.html", label: "双线交汇" },
+    { file: "slides/17-questions.html",   label: "开放问题" }
+  ];
+  window.DECK_WIDTH = 1920;
+  window.DECK_HEIGHT = 1080;
+</script>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    background: #0a0a0a;
+    overflow: hidden;
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+  }
+  #stage {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform-origin: top left;
+    will-change: transform;
+    background: #fff;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.4);
+  }
+  #stage iframe { width: 100%; height: 100%; border: 0; display: block; background: #fff; }
+
+  .counter {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    font-variant-numeric: tabular-nums;
+    z-index: 100;
+    user-select: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .counter:hover { opacity: 1; }
+  .counter .label { color: rgba(255,255,255,0.7); margin-left: 8px; }
+
+  .nav-zone {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 15%;
+    cursor: pointer;
+    z-index: 50;
+  }
+  .nav-zone.left  { left: 0; }
+  .nav-zone.right { right: 0; }
+  .nav-hint {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.6);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .nav-zone.left .nav-hint  { left: 20px; }
+  .nav-zone.right .nav-hint { right: 20px; }
+  .nav-zone:hover .nav-hint { opacity: 1; }
+
+  #overview {
+    position: fixed; inset: 0;
+    background: #101010;
+    z-index: 200;
+    overflow-y: auto;
+    display: none;
+    padding: 48px 56px 64px;
+  }
+  #overview.open { display: block; }
+  #overview .ov-head {
+    color: rgba(255,255,255,0.85);
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 32px;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  #overview .ov-head small { color: rgba(255,255,255,0.4); font-size: 13px; letter-spacing: 0.1em; }
+  #ovGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+  }
+  .ov-item { cursor: pointer; }
+  .ov-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #fff;
+    overflow: hidden;
+    outline: 2px solid transparent;
+    transition: outline-color 0.15s;
+  }
+  .ov-item:hover .ov-frame, .ov-item.current .ov-frame { outline-color: #1F4E79; }
+  .ov-frame iframe {
+    width: 1920px; height: 1080px;
+    border: 0;
+    transform-origin: top left;
+    pointer-events: none;
+    background: #fff;
+  }
+  .ov-cap {
+    margin-top: 10px;
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    display: flex; gap: 10px;
+  }
+  .ov-cap i { font-style: normal; font-family: "JetBrains Mono", monospace; color: rgba(255,255,255,0.4); }
+
+  @media print {
+    @page { size: 1920px 1080px; margin: 0; }
+    html, body { background: #fff; overflow: visible; height: auto; }
+    #stage { position: static; transform: none !important; box-shadow: none; }
+    .counter, .nav-zone, #overview { display: none !important; }
+    .print-stack { display: block; }
+    .print-stack iframe { width: 1920px; height: 1080px; page-break-after: always; display: block; border: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <iframe id="frame" src="about:blank"></iframe>
+</div>
+
+<div class="nav-zone left"  id="navL"><div class="nav-hint">‹</div></div>
+<div class="nav-zone right" id="navR"><div class="nav-hint">›</div></div>
+<div class="counter" id="counter">1 / 1</div>
+
+<div id="overview">
+  <div class="ov-head"><span>概览</span><small>O / ESC 关闭 · 点击跳页</small></div>
+  <div id="ovGrid"></div>
+</div>
+
+<div class="print-stack" id="printStack" style="display:none;"></div>
+
+<script>
+(function () {
+  const W = window.DECK_WIDTH || 1920;
+  const H = window.DECK_HEIGHT || 1080;
+  const deck = window.DECK_MANIFEST || [];
+  const stage = document.getElementById('stage');
+  const frame = document.getElementById('frame');
+  const counter = document.getElementById('counter');
+  const overview = document.getElementById('overview');
+  const ovGrid = document.getElementById('ovGrid');
+  const printStack = document.getElementById('printStack');
+  const storageKey = 'deck-index-' + location.pathname;
+  let current = 0;
+  let ovBuilt = false;
+
+  stage.style.width  = W + 'px';
+  stage.style.height = H + 'px';
+
+  function fit() {
+    const s = Math.min(window.innerWidth / W, window.innerHeight / H);
+    const x = (window.innerWidth  - W * s) / 2;
+    const y = (window.innerHeight - H * s) / 2;
+    stage.style.transform = `translate(${x}px, ${y}px) scale(${s})`;
+    stage.style.top = '0';
+    stage.style.left = '0';
+  }
+
+  function show(idx) {
+    if (idx < 0 || idx >= deck.length) return;
+    current = idx;
+    frame.src = deck[idx].file;
+    counter.innerHTML = `${idx + 1} / ${deck.length} <span class="label">${deck[idx].label || ''}</span>`;
+    try { localStorage.setItem(storageKey, String(idx)); } catch (_) {}
+    if (location.hash !== '#' + (idx + 1)) history.replaceState(null, '', '#' + (idx + 1));
+    document.querySelectorAll('.ov-item').forEach((el, i) => el.classList.toggle('current', i === idx));
+  }
+
+  function next() { show(Math.min(current + 1, deck.length - 1)); }
+  function prev() { show(Math.max(current - 1, 0)); }
+
+  function buildOverview() {
+    if (ovBuilt) return;
+    ovBuilt = true;
+    deck.forEach((item, i) => {
+      const wrap = document.createElement('div');
+      wrap.className = 'ov-item' + (i === current ? ' current' : '');
+      const fr = document.createElement('div');
+      fr.className = 'ov-frame';
+      const ifr = document.createElement('iframe');
+      ifr.src = item.file;
+      ifr.loading = 'lazy';
+      fr.appendChild(ifr);
+      const cap = document.createElement('div');
+      cap.className = 'ov-cap';
+      cap.innerHTML = `<i>${String(i + 1).padStart(2, '0')}</i><span>${item.label || ''}</span>`;
+      wrap.appendChild(fr);
+      wrap.appendChild(cap);
+      wrap.addEventListener('click', () => { toggleOverview(false); show(i); });
+      ovGrid.appendChild(wrap);
+    });
+    scaleOverview();
+  }
+
+  function scaleOverview() {
+    document.querySelectorAll('.ov-frame').forEach(fr => {
+      const ifr = fr.querySelector('iframe');
+      if (ifr) ifr.style.transform = 'scale(' + (fr.clientWidth / W) + ')';
+    });
+  }
+
+  function toggleOverview(force) {
+    const open = typeof force === 'boolean' ? force : !overview.classList.contains('open');
+    if (open) { buildOverview(); overview.classList.add('open'); scaleOverview(); }
+    else overview.classList.remove('open');
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    switch (e.key) {
+      case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); if (overview.classList.contains('open')) return; next(); break;
+      case 'ArrowLeft':  case 'PageUp':              e.preventDefault(); if (overview.classList.contains('open')) return; prev(); break;
+      case 'Home':        e.preventDefault(); show(0); break;
+      case 'End':         e.preventDefault(); show(deck.length - 1); break;
+      case 'o': case 'O': e.preventDefault(); toggleOverview(); break;
+      case 'Escape':      if (overview.classList.contains('open')) { e.preventDefault(); toggleOverview(false); } break;
+      case 'p': case 'P': window.print(); break;
+      default:
+        if (e.key >= '1' && e.key <= '9') {
+          const i = parseInt(e.key, 10) - 1;
+          if (i < deck.length) { e.preventDefault(); show(i); }
+        }
+    }
+  });
+
+  document.getElementById('navL').addEventListener('click', prev);
+  document.getElementById('navR').addEventListener('click', next);
+  window.addEventListener('resize', () => { fit(); scaleOverview(); });
+  window.addEventListener('hashchange', () => {
+    const m = location.hash.match(/^#(\d+)$/);
+    if (m) show(parseInt(m[1], 10) - 1);
+  });
+
+  const hashMatch = location.hash.match(/^#(\d+)$/);
+  if (hashMatch) current = Math.min(parseInt(hashMatch[1], 10) - 1, deck.length - 1);
+  else try {
+    const v = parseInt(localStorage.getItem(storageKey), 10);
+    if (!isNaN(v) && v >= 0 && v < deck.length) current = v;
+  } catch (_) {}
+  fit();
+  show(current);
+
+  window.addEventListener('beforeprint', () => {
+    printStack.innerHTML = '';
+    deck.forEach(item => {
+      const f = document.createElement('iframe');
+      f.src = item.file;
+      printStack.appendChild(f);
+    });
+    printStack.style.display = 'block';
+    stage.style.display = 'none';
+  });
+  window.addEventListener('afterprint', () => {
+    printStack.innerHTML = '';
+    printStack.style.display = 'none';
+    stage.style.display = '';
+  });
+})();
+</script>
+
+</body>
+</html>

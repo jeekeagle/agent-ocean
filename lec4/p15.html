@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>叮咚渔医平台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>叮咚渔医平台</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+      </defs>
+      <text x="0" y="50" font-size="26" fill="#777">技术底座：DeepSeek 大模型 + 鱼病识别知识图谱 · MacBERT · GraphSAGE · 多头注意力机制</text>
+      <!-- flow -->
+      <g>
+        <rect x="0" y="120" width="520" height="220" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+        <rect x="0" y="120" width="520" height="6" fill="#1F4E79"/>
+        <text x="40" y="200" font-size="32" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">诊前预警</text>
+        <text x="40" y="260" font-size="24" fill="#555">物联网时序分析</text>
+        <text x="40" y="300" font-size="24" fill="#555">风险提前 5 天预警</text>
+      </g>
+      <g>
+        <rect x="604" y="120" width="520" height="220" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+        <rect x="604" y="120" width="520" height="6" fill="#1F4E79"/>
+        <text x="644" y="200" font-size="32" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">病中应对</text>
+        <text x="644" y="260" font-size="24" fill="#555">多模态 AI 诊断引擎</text>
+        <text x="644" y="300" font-size="24" fill="#555">1 分钟出诊断结果</text>
+      </g>
+      <g>
+        <rect x="1208" y="120" width="520" height="220" fill="#FAFBFC" stroke="#D9D9D9" stroke-width="2"/>
+        <rect x="1208" y="120" width="520" height="6" fill="#1F4E79"/>
+        <text x="1248" y="200" font-size="32" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">诊后跟踪</text>
+        <text x="1248" y="260" font-size="24" fill="#555">数字孪生复盘</text>
+        <text x="1248" y="300" font-size="24" fill="#555">方案效果持续追踪</text>
+      </g>
+      <g stroke="#1F4E79" stroke-width="3">
+        <line x1="532" y1="230" x2="592" y2="230" marker-end="url(#ar)"/>
+        <line x1="1136" y1="230" x2="1196" y2="230" marker-end="url(#ar)"/>
+      </g>
+      <text x="864" y="400" font-size="26" fill="#777" text-anchor="middle">全流程：诊前 — 病中 — 诊后 闭环</text>
+      <!-- dual wheel -->
+      <circle cx="260" cy="620" r="105" fill="#1F4E79"/>
+      <text x="260" y="612" font-size="30" font-weight="700" fill="#fff" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">AI 诊断</text>
+      <text x="260" y="652" font-size="24" fill="#fff" text-anchor="middle">模型先行</text>
+      <circle cx="560" cy="620" r="105" fill="#fff" stroke="#1F4E79" stroke-width="3"/>
+      <text x="560" y="612" font-size="30" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">专家复核</text>
+      <text x="560" y="652" font-size="24" fill="#777" text-anchor="middle">把关纠错</text>
+      <path d="M 380 560 A 160 160 0 0 1 440 552" fill="none" stroke="#1F4E79" stroke-width="3"/>
+      <polygon points="440,546 452,556 438,564" fill="#1F4E79"/>
+      <path d="M 440 690 A 160 160 0 0 1 380 682" fill="none" stroke="#1F4E79" stroke-width="3"/>
+      <polygon points="380,676 368,686 382,694" fill="#1F4E79"/>
+      <text x="780" y="560" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">「AI + 专家」双轮协同</text>
+      <text x="780" y="620" font-size="26" fill="#555">模型先诊断 · 专家复核兜底</text>
+      <text x="780" y="670" font-size="26" fill="#777">规则写不到的地方，人补上</text>
+      <text x="780" y="720" font-size="24" fill="#999">边界处理：人退到复核位，而非操作位</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

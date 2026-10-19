@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>迁移总判断</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>迁移总判断</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C8C8C8"/></marker>
+      </defs>
+      <!-- axis labels -->
+      <text x="80" y="330" font-size="26" fill="#777">下限 · 深海</text>
+      <text x="1648" y="330" font-size="26" fill="#1F4E79" text-anchor="end">上限 · 港口</text>
+      <!-- axis -->
+      <line x1="80" y1="440" x2="1648" y2="440" stroke="#C8C8C8" stroke-width="3" marker-end="url(#ar)"/>
+      <polygon points="80,440 92,433 92,447" fill="#C8C8C8"/>
+      <!-- dots -->
+      <g>
+        <circle cx="424" cy="440" r="14" fill="#1F4E79"/>
+        <text x="424" y="392" font-size="28" fill="#1A1A1A" text-anchor="middle">海上风电运维</text>
+        <text x="424" y="500" font-size="24" fill="#999" text-anchor="middle">示范应用</text>
+        <circle cx="719" cy="440" r="14" fill="#1F4E79"/>
+        <text x="719" y="392" font-size="28" fill="#1A1A1A" text-anchor="middle">智慧渔业</text>
+        <text x="719" y="500" font-size="24" fill="#999" text-anchor="middle">示范应用</text>
+        <circle cx="1016" cy="440" r="14" fill="#1F4E79"/>
+        <text x="1016" y="392" font-size="28" fill="#1A1A1A" text-anchor="middle">水下清洗装备</text>
+        <text x="1016" y="500" font-size="24" fill="#999" text-anchor="middle">示范应用</text>
+        <circle cx="1312" cy="440" r="14" fill="#1F4E79"/>
+        <text x="1312" y="392" font-size="28" fill="#1A1A1A" text-anchor="middle">海洋环境预报</text>
+        <text x="1312" y="500" font-size="24" fill="#999" text-anchor="middle">技术验证转示范</text>
+        <circle cx="1570" cy="440" r="14" fill="#1F4E79"/>
+        <text x="1570" y="392" font-size="28" fill="#1A1A1A" text-anchor="middle">智慧港口</text>
+        <text x="1570" y="500" font-size="24" fill="#999" text-anchor="middle">规模化应用</text>
+      </g>
+      <!-- ends -->
+      <text x="80" y="620" font-size="28" fill="#555">环境突变 · 动作需临场判断</text>
+      <text x="1648" y="620" font-size="28" fill="#1F4E79" font-weight="700" text-anchor="end">环境可预测 · 动作可标准化</text>
+      <!-- bottom -->
+      <line x1="0" y1="680" x2="1728" y2="680" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="864" y="760" font-size="32" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">约束迁移的进度，取决于约束的性质</text>
+      <text x="864" y="815" font-size="26" fill="#777" text-anchor="middle">港口是上限 · 深海是下限</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

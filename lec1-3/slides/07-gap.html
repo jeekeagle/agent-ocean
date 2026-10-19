@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>企业间差距</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 70px 130px 0; }
+  .foot { margin: 38px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+</style>
+</head>
+<body>
+  <p class="assertion">企业间差距</p>
+
+  <svg class="figure" width="1660" height="620" viewBox="0 0 1660 620" fill="none">
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">TWO UNITS, SAME SCALE, DIVERGING</text>
+
+    <!-- 坐标轴 -->
+    <line x1="60" y1="440" x2="1600" y2="440" stroke="#9B998F" stroke-width="2"/>
+    <line x1="60" y1="60" x2="60" y2="440" stroke="#9B998F" stroke-width="2"/>
+
+    <!-- 上线：用了工具 -->
+    <path d="M60 380 C 400 360, 700 300, 1000 210 S 1400 90, 1600 60" stroke="#1F4E79" stroke-width="3.5" fill="none"/>
+    <text x="1240" y="236" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#1F4E79">用了工具的一家</text>
+    <text x="1240" y="278" font-family="Noto Sans SC" font-size="24" fill="#55534E">活接得更多 · 出错更少 · 成本更低</text>
+
+    <!-- 下线：老办法 -->
+    <path d="M60 392 C 400 396, 800 404, 1600 424" stroke="#B9B7AF" stroke-width="3" fill="none" stroke-dasharray="10 8"/>
+    <text x="60" y="516" font-family="Noto Serif SC" font-weight="600" font-size="26" fill="#55534E">还在用老办法的一家<tspan font-family="Noto Sans SC" font-size="23" fill="#9B998F">　—— 人工一条一条核、一个一个对</tspan></text>
+
+    <!-- 缝（阴影带） -->
+    <path d="M60 380 C 400 360, 700 300, 1000 210 S 1400 90, 1600 60 L 1600 424 C 800 404, 400 396, 60 392 Z" fill="#E8E6E1" opacity="0.55"/>
+    <text x="760" y="330" font-family="Noto Serif SC" font-weight="700" font-size="34" fill="#1F4E79">缝</text>
+
+    <!-- 时间刻度 -->
+    <g font-family="JetBrains Mono" font-size="21" fill="#9B998F">
+      <line x1="360" y1="440" x2="360" y2="452"/>
+      <text x="330" y="482">头一两月</text>
+      <line x1="760" y1="440" x2="760" y2="452"/>
+      <text x="738" y="482">半年后</text>
+      <line x1="1240" y1="440" x2="1240" y2="452"/>
+      <text x="1146" y="482">客户看得出</text>
+    </g>
+
+    <!-- 标注 -->
+    <text x="330" y="428" text-anchor="middle" font-family="Noto Sans SC" font-size="23" fill="#9B998F">看不出差别</text>
+    <text x="1240" y="380" text-anchor="middle" font-family="Noto Sans SC" font-size="23" fill="#1F4E79">再追就晚了</text>
+
+    <!-- 底部结论 -->
+    <line x1="0" y1="556" x2="1660" y2="556" stroke="#E8E6E1" stroke-width="1.5"/>
+    <text x="0" y="606" font-family="Noto Sans SC" font-size="27" fill="#55534E">规模差不多、底子差不多的两家，<tspan font-weight="500" fill="#1F4E79">这道缝在一天天变宽</tspan>。</text>
+  </svg>
+
+  <p class="foot">问题已不是「要不要变」，是<b>别人变了、你没变</b>。</p>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P05 · 数字化</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; position: relative; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 66px 130px 0; }
+  .foot { margin: 34px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+  .wave { position: absolute; left: 0; bottom: 20px; }
+</style>
+<style></style><style>
+  .course-badge { position: absolute; top: 72px; right: 130px; z-index: 60;
+    display: flex; align-items: center; gap: 13px; }
+  .course-badge .cb-text { font-family: "Noto Sans SC", sans-serif; font-size: 22px;
+    font-weight: 500; color: #9B998F; letter-spacing: 0.06em; white-space: nowrap; }
+</style></head>
+<body><div class="course-badge"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="11" y1="11" x2="19" y2="7" stroke="#1F4E79" stroke-width="1.6"/><line x1="19" y1="7" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.6"/><line x1="11" y1="11" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="2 2.4"/><line x1="19" y1="7" x2="19" y2="20" stroke="#1F4E79" stroke-width="1.6"/><circle cx="11" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="7" r="2.7" fill="#1F4E79"/><circle cx="27" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="20" r="2.7" fill="#1F4E79"/><path d="M5 29 Q9.5 25.5 14 29 T23 29 T33 29" stroke="#1F4E79" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M5 34 Q9.5 31 14 34 T23 34 T33 34" stroke="#1F4E79" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/></svg><span class="cb-text">人工智能 × 具身智能 · 赋能海洋</span></div>
+  <p class="assertion">数字化</p>
+
+  <svg class="figure" width="1660" height="540" viewBox="0 0 1660 540" fill="none">
+    <!-- 左：浮标采集 -->
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">SENSORS · 海洋牧场浮标</text>
+    <!-- 海面线 -->
+    <path d="M20 150 Q 70 138 120 150 T 220 150 T 320 150 T 420 150" stroke="#D8D6D0" stroke-width="2.5" fill="none"/>
+    <!-- 浮标 -->
+    <circle cx="200" cy="120" r="26" fill="#1F4E79"/>
+    <line x1="200" y1="146" x2="200" y2="300" stroke="#1F4E79" stroke-width="3"/>
+    <line x1="170" y1="300" x2="230" y2="300" stroke="#1F4E79" stroke-width="3"/>
+    <!-- 三参数 -->
+    <g font-family="JetBrains Mono" font-size="21" fill="#55534E">
+      <text x="60" y="370">水温</text>
+      <text x="200" y="370">溶氧</text>
+      <text x="340" y="370">盐度</text>
+      <line x1="88" y1="340" x2="180" y2="140" stroke="#E8E6E1" stroke-width="1.5"/>
+      <line x1="228" y1="340" x2="215" y2="146" stroke="#E8E6E1" stroke-width="1.5"/>
+      <line x1="368" y1="340" x2="240" y2="150" stroke="#E8E6E1" stroke-width="1.5"/>
+    </g>
+    <text x="60" y="440" font-family="Noto Sans SC" font-size="22" fill="#9B998F">实时传回后台</text>
+
+    <!-- 箭头 -->
+    <line x1="500" y1="230" x2="620" y2="230" stroke="#B9B7AF" stroke-width="2.5"/>
+    <path d="M632 230 L 614 220 L 614 240 Z" fill="#B9B7AF"/>
+    <text x="566" y="200" text-anchor="middle" font-family="JetBrains Mono" font-size="18" fill="#9B998F">自动跑模型</text>
+
+    <!-- 中：模型 -->
+    <rect x="670" y="140" width="330" height="180" rx="4" stroke="#101010" stroke-width="2" fill="none"/>
+    <text x="835" y="225" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="30" fill="#141414">趋势 · 规律</text>
+    <text x="835" y="272" text-anchor="middle" font-family="JetBrains Mono" font-size="20" fill="#9B998F">model</text>
+
+    <!-- 箭头 -->
+    <line x1="1030" y1="230" x2="1140" y2="230" stroke="#B9B7AF" stroke-width="2.5"/>
+    <path d="M1152 230 L 1134 220 L 1134 240 Z" fill="#B9B7AF"/>
+
+    <!-- 右：输出决策 -->
+    <rect x="1190" y="110" width="430" height="110" rx="4" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+    <text x="1230" y="158" font-family="Noto Sans SC" font-size="25" fill="#141414">这片水域适合<tspan font-weight="500" fill="#1F4E79">投饵</tspan></text>
+    <text x="1230" y="198" font-family="Noto Sans SC" font-size="22" fill="#9B998F">这两天</text>
+    <rect x="1190" y="240" width="430" height="110" rx="4" stroke="#101010" stroke-width="2" fill="none"/>
+    <text x="1230" y="288" font-family="Noto Sans SC" font-size="25" fill="#141414">那片水域要<tspan font-weight="500" fill="#141414">留意</tspan></text>
+    <text x="1230" y="328" font-family="Noto Sans SC" font-size="22" fill="#9B998F">溶氧在掉</text>
+
+    <!-- 分隔线与对照 -->
+    <line x1="0" y1="430" x2="1660" y2="430" stroke="#E8E6E1" stroke-width="1"/>
+    <text x="0" y="492" font-family="Noto Serif SC" font-weight="600" font-size="30" fill="#55534E">信息化提供的是<tspan fill="#141414">参考</tspan>，数字化提供的是<tspan fill="#1F4E79">决策</tspan></text>
+    <text x="0" y="536" font-family="Noto Sans SC" font-size="24" fill="#9B998F">信息化指向观念，数字化指向行动——让原来做不了的事，可以做。</text>
+  </svg>
+
+  <p class="foot">但它仍有边界：<b>系统说「这一网该起了」，按不按那个按钮，是你的手。</b></p>
+
+  <svg class="wave" width="1920" height="40" viewBox="0 0 1920 40" fill="none">
+    <path d="M0 20 Q 60 6 120 20 T 240 20 T 360 20 T 480 20 T 600 20 T 720 20 T 840 20 T 960 20 T 1080 20 T 1200 20 T 1320 20 T 1440 20 T 1560 20 T 1680 20 T 1800 20 T 1920 20" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P04 · 三代看海</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; position: relative; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 64px 130px 0; }
+  .foot { margin: 36px 130px 0; font-size: 26px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+  .wave { position: absolute; left: 0; bottom: 20px; }
+</style>
+</head>
+<body>
+  <p class="assertion">三代看海</p>
+
+  <svg class="figure" width="1660" height="600" viewBox="0 0 1660 600" fill="none">
+    <!-- 列头 -->
+    <text x="40" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="2" fill="#9B998F">信息化 · 看得见，不全</text>
+    <text x="600" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="2" fill="#9B998F">数字化 · 看得全，得人判</text>
+    <text x="1160" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="2" fill="#1F4E79">智能化 · 替你判</text>
+
+    <!-- 卡片 -->
+    <rect x="0" y="60" width="500" height="230" rx="4" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+    <text x="40" y="125" font-family="Noto Sans SC" font-size="24" fill="#55534E">点状建设，各建各的</text>
+    <text x="40" y="170" font-family="Noto Sans SC" font-size="24" fill="#55534E">数据存下，互相不通</text>
+    <text x="40" y="235" font-family="Noto Serif SC" font-weight="600" font-size="27" fill="#141414">人是数据的搬运工</text>
+
+    <rect x="560" y="60" width="500" height="230" rx="4" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+    <text x="600" y="125" font-family="Noto Sans SC" font-size="24" fill="#55534E">温盐流向，一调就出</text>
+    <text x="600" y="170" font-family="Noto Sans SC" font-size="24" fill="#55534E">赤潮范围，能报大小</text>
+    <text x="600" y="235" font-family="Noto Serif SC" font-weight="600" font-size="27" fill="#141414">人是判断者</text>
+
+    <rect x="1120" y="60" width="540" height="230" rx="4" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+    <text x="1160" y="125" font-family="Noto Sans SC" font-size="24" fill="#55534E">异常色块检测，快速定位追踪</text>
+    <text x="1160" y="170" font-family="Noto Sans SC" font-size="24" fill="#55534E">预报模型，直接算出走向</text>
+    <text x="1160" y="235" font-family="Noto Serif SC" font-weight="600" font-size="27" fill="#1F4E79">人是审核者</text>
+
+    <!-- 赤潮时间轴 -->
+    <text x="0" y="360" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">赤潮 · 同一件事</text>
+    <line x1="0" y1="420" x2="1660" y2="420" stroke="#B9B7AF" stroke-width="2"/>
+    <circle cx="180" cy="420" r="9" fill="#B9B7AF"/>
+    <circle cx="800" cy="420" r="9" fill="#B9B7AF"/>
+    <circle cx="1420" cy="420" r="11" fill="#1F4E79"/>
+    <text x="60" y="470" font-family="Noto Sans SC" font-size="23" fill="#9B998F">等卫星、等人分析、等专家——漂出去几十海里</text>
+    <text x="660" y="470" font-family="Noto Sans SC" font-size="23" fill="#9B998F">系统摆数据，结论你来下</text>
+    <text x="1260" y="470" font-family="Noto Sans SC" font-size="23" fill="#1F4E79">边漂边追，走向直接算出</text>
+
+    <line x1="0" y1="520" x2="1660" y2="520" stroke="#E8E6E1" stroke-width="1"/>
+  </svg>
+
+  <p class="foot"><b>信息化交出记忆，数字化交出计算，智能化交出判断</b>——人一步步往后退。</p>
+
+  <svg class="wave" width="1920" height="40" viewBox="0 0 1920 40" fill="none">
+    <path d="M0 20 Q 60 6 120 20 T 240 20 T 360 20 T 480 20 T 600 20 T 720 20 T 840 20 T 960 20 T 1080 20 T 1200 20 T 1320 20 T 1440 20 T 1560 20 T 1680 20 T 1800 20 T 1920 20" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+  </svg>
+</body>
+</html>

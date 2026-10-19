@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P04 · 提示词</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 70px 130px 0; }
+  .foot { margin: 38px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+</style>
+<style>
+  .course-badge { position: absolute; top: 72px; right: 130px; z-index: 60;
+    display: flex; align-items: center; gap: 13px; }
+  .course-badge .cb-text { font-family: "Noto Sans SC", sans-serif; font-size: 22px;
+    font-weight: 500; color: #9B998F; letter-spacing: 0.06em; white-space: nowrap; }
+</style></head>
+<body><div class="course-badge"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="11" y1="11" x2="19" y2="7" stroke="#1F4E79" stroke-width="1.6"/><line x1="19" y1="7" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.6"/><line x1="11" y1="11" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="2 2.4"/><line x1="19" y1="7" x2="19" y2="20" stroke="#1F4E79" stroke-width="1.6"/><circle cx="11" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="7" r="2.7" fill="#1F4E79"/><circle cx="27" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="20" r="2.7" fill="#1F4E79"/><path d="M5 29 Q9.5 25.5 14 29 T23 29 T33 29" stroke="#1F4E79" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M5 34 Q9.5 31 14 34 T23 34 T33 34" stroke="#1F4E79" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/></svg><span class="cb-text">人工智能 × 具身智能 · 赋能海洋</span></div>
+  <p class="assertion">提示词</p>
+
+  <svg class="figure" width="1660" height="560" viewBox="0 0 1660 560" fill="none">
+    <!-- 左：岗位说明书 -->
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">A JOB DESCRIPTION</text>
+    <rect x="20" y="70" width="440" height="420" rx="4" stroke="#101010" stroke-width="2" fill="none"/>
+    <text x="60" y="130" font-family="Noto Serif SC" font-weight="600" font-size="30" fill="#141414">岗位说明书</text>
+    <line x1="60" y1="155" x2="420" y2="155" stroke="#E8E6E1" stroke-width="1.5"/>
+    <g font-family="Noto Sans SC" font-size="24" fill="#55534E">
+      <text x="60" y="210">角色：<tspan font-weight="500" fill="#1F4E79">电商客服</tspan></text>
+      <text x="60" y="265">业务：我们公司做什么</text>
+      <text x="60" y="320">政策：服务与退换货规则</text>
+      <text x="60" y="375">禁区：不能承诺什么</text>
+    </g>
+    <text x="60" y="452" font-family="JetBrains Mono" font-size="19" fill="#9B998F">= system prompt</text>
+
+    <!-- 中：箭头 -->
+    <line x1="500" y1="280" x2="590" y2="280" stroke="#B9B7AF" stroke-width="2.5"/>
+    <path d="M602 280 L 584 270 L 584 290 Z" fill="#B9B7AF"/>
+
+    <!-- 中右：统一口径的客服 -->
+    <rect x="630" y="160" width="380" height="240" rx="4" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+    <text x="820" y="265" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#1F4E79">以客服身份</text>
+    <text x="820" y="315" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#1F4E79">统一口径作答</text>
+
+    <!-- 右：墙 -->
+    <text x="1120" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">THEN IT HITS A WALL</text>
+    <g fill="#D8D6D0">
+      <rect x="1120" y="80" width="120" height="50"/><rect x="1248" y="80" width="120" height="50"/><rect x="1376" y="80" width="120" height="50"/><rect x="1504" y="80" width="120" height="50"/>
+      <rect x="1120" y="138" width="56" height="50"/><rect x="1184" y="138" width="120" height="50"/><rect x="1312" y="138" width="120" height="50"/><rect x="1440" y="138" width="120" height="50"/><rect x="1568" y="138" width="56" height="50"/>
+      <rect x="1120" y="196" width="120" height="50"/><rect x="1248" y="196" width="120" height="50"/><rect x="1376" y="196" width="120" height="50"/><rect x="1504" y="196" width="120" height="50"/>
+      <rect x="1120" y="254" width="56" height="50"/><rect x="1184" y="254" width="120" height="50"/><rect x="1312" y="254" width="120" height="50"/><rect x="1440" y="254" width="120" height="50"/><rect x="1568" y="254" width="56" height="50"/>
+      <rect x="1120" y="312" width="120" height="50"/><rect x="1248" y="312" width="120" height="50"/><rect x="1376" y="312" width="120" height="50"/><rect x="1504" y="312" width="120" height="50"/>
+      <rect x="1120" y="370" width="56" height="50"/><rect x="1184" y="370" width="120" height="50"/><rect x="1312" y="370" width="120" height="50"/><rect x="1440" y="370" width="120" height="50"/><rect x="1568" y="370" width="56" height="50"/>
+    </g>
+    <g font-family="Noto Sans SC" font-size="24" fill="#55534E">
+      <text x="1120" y="470">产品成千上万 · 政策随时在变</text>
+      <text x="1120" y="512">固定文本 · 长度有上限 · 无法每天改</text>
+    </g>
+  </svg>
+
+  <p class="foot">提示词是第一步，但它是<b>固定文本</b>——这条路走到头，会撞上业务规模这堵墙。</p>
+</body>
+</html>

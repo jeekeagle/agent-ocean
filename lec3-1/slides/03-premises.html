@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P03 · 三个前提</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; position: relative; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 70px 130px 0; }
+  .foot { margin: 40px 130px 0; font-size: 26px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+  .wave { position: absolute; left: 0; bottom: 22px; }
+</style>
+</head>
+<body>
+  <p class="assertion">三个前提</p>
+
+  <svg class="figure" width="1660" height="540" viewBox="0 0 1660 540" fill="none">
+    <!-- 前提1：数据 -->
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#1F4E79">01 · 数据</text>
+    <text x="0" y="95" font-family="Noto Serif SC" font-weight="600" font-size="34" fill="#141414">燃料是这几年才有的</text>
+    <text x="0" y="152" font-family="Noto Sans SC" font-size="24" fill="#55534E">摄像头、传感器、卫星、手机，</text>
+    <text x="0" y="192" font-family="Noto Sans SC" font-size="24" fill="#55534E">天天在产生数据</text>
+    <line x1="0" y1="240" x2="470" y2="240" stroke="#E8E6E1" stroke-width="1"/>
+    <text x="0" y="282" font-family="Noto Sans SC" font-size="24" fill="#9B998F">一百万张猫 → 一千万张 → 一亿张，</text>
+    <text x="0" y="322" font-family="Noto Sans SC" font-size="24" fill="#9B998F">数据越多，它越准</text>
+
+    <line x1="560" y1="30" x2="560" y2="360" stroke="#E8E6E1" stroke-width="1"/>
+
+    <!-- 前提2：算力 -->
+    <text x="630" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">02 · 算力</text>
+    <text x="630" y="95" font-family="Noto Serif SC" font-weight="600" font-size="34" fill="#141414">算得动了</text>
+    <text x="630" y="152" font-family="Noto Sans SC" font-size="24" fill="#55534E">十几年的算力增长，</text>
+    <text x="630" y="192" font-family="Noto Sans SC" font-size="24" fill="#55534E">让训练超大模型从不可能</text>
+    <text x="630" y="232" font-family="Noto Sans SC" font-size="24" fill="#55534E">变成可能</text>
+
+    <line x1="1100" y1="30" x2="1100" y2="360" stroke="#E8E6E1" stroke-width="1"/>
+
+    <!-- 前提3：涌现 -->
+    <text x="1170" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">03 · 涌现</text>
+    <text x="1170" y="95" font-family="Noto Serif SC" font-weight="600" font-size="34" fill="#141414">过了那条线，突然会了</text>
+    <!-- 水烧开示意 -->
+    <path d="M1170 180 C 1230 180, 1230 300, 1330 300 L 1450 300" stroke="#B9B7AF" stroke-width="2.5" fill="none"/>
+    <circle cx="1450" cy="300" r="9" fill="#1F4E79"/>
+    <text x="1170" y="210" font-family="JetBrains Mono" font-size="19" fill="#9B998F">99°C · 还没开</text>
+    <text x="1440" y="270" font-family="JetBrains Mono" font-size="19" fill="#1F4E79">100°C</text>
+    <text x="1170" y="350" font-family="Noto Sans SC" font-size="24" fill="#55534E">没教过它的事，规模一到，自己就会</text>
+
+    <!-- 底部 -->
+    <line x1="0" y1="420" x2="1660" y2="420" stroke="#E8E6E1" stroke-width="1"/>
+    <text x="0" y="490" font-family="Noto Serif SC" font-weight="600" font-size="32" fill="#141414">不是我们更聪明了，是<tspan fill="#1F4E79">规模过了那条线</tspan></text>
+  </svg>
+
+  <p class="foot">「喂」这条路早有人想到——<b>只是燃料、算力、规模，三样这几年才凑齐</b>。</p>
+
+  <svg class="wave" width="1920" height="40" viewBox="0 0 1920 40" fill="none">
+    <path d="M0 20 Q 60 6 120 20 T 240 20 T 360 20 T 480 20 T 600 20 T 720 20 T 840 20 T 960 20 T 1080 20 T 1200 20 T 1320 20 T 1440 20 T 1560 20 T 1680 20 T 1800 20 T 1920 20" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+  </svg>
+</body>
+</html>

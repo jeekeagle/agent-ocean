@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>替代边界</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>替代边界</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <!-- split bar -->
+      <rect x="0" y="60" width="1210" height="140" fill="#1F4E79"/>
+      <text x="40" y="120" class="m" font-size="36" font-weight="700" fill="#fff">70%</text>
+      <text x="180" y="122" font-size="32" font-weight="700" fill="#fff">检测环节 — 可自动化</text>
+      <text x="40" y="172" font-size="24" fill="#CBD8E6">摄像头看 · 算法判 · 可远距离完成</text>
+      <rect x="1250" y="60" width="478" height="140" fill="#D9D9D9"/>
+      <text x="1290" y="120" class="m" font-size="36" font-weight="700" fill="#555">30%</text>
+      <text x="1420" y="122" font-size="32" font-weight="700" fill="#555">维修 — 需要手</text>
+      <text x="1290" y="172" font-size="24" fill="#777">拧螺栓 · 换部件 · 站稳</text>
+      <!-- two limits -->
+      <line x1="864" y1="280" x2="864" y2="640" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="0" y="340" font-size="32" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">物理限制</text>
+      <text x="0" y="410" font-size="28" fill="#1A1A1A">海况不允许 — 窗口期没有变长</text>
+      <text x="0" y="470" font-size="26" fill="#777">船出不去 · 人上不去</text>
+      <text x="0" y="520" font-size="26" fill="#777">AI 能提高窗口内的效率</text>
+      <text x="0" y="570" font-size="26" fill="#777">AI 不能拉长窗口</text>
+      <text x="940" y="340" font-size="32" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">技术限制</text>
+      <text x="940" y="410" font-size="28" fill="#1A1A1A">手的精细程度不够</text>
+      <text x="940" y="470" font-size="26" fill="#777">感知可远距离完成</text>
+      <text x="940" y="520" font-size="26" fill="#777">行动必须到场</text>
+      <text x="940" y="570" font-size="26" fill="#777">维修需要身体，且需要手</text>
+      <!-- bottom -->
+      <line x1="0" y1="680" x2="1728" y2="680" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="0" y="760" font-size="28" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">整体仍停在数字化阶段：看得更清 · 判得更准</text>
+      <text x="0" y="812" font-size="26" fill="#777">出海前知道得更清楚了 — 但运维的组织方式没有改变</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

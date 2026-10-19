@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>五种编排模式</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 70px 130px 0; }
+  .foot { margin: 38px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+</style>
+<style>
+  .course-badge { position: absolute; top: 72px; right: 130px; z-index: 60;
+    display: flex; align-items: center; gap: 13px; }
+  .course-badge .cb-text { font-family: "Noto Sans SC", sans-serif; font-size: 22px;
+    font-weight: 500; color: #9B998F; letter-spacing: 0.06em; white-space: nowrap; }
+</style></head>
+<body><div class="course-badge"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="11" y1="11" x2="19" y2="7" stroke="#1F4E79" stroke-width="1.6"/><line x1="19" y1="7" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.6"/><line x1="11" y1="11" x2="27" y2="11" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="2 2.4"/><line x1="19" y1="7" x2="19" y2="20" stroke="#1F4E79" stroke-width="1.6"/><circle cx="11" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="7" r="2.7" fill="#1F4E79"/><circle cx="27" cy="11" r="2.7" fill="#1F4E79"/><circle cx="19" cy="20" r="2.7" fill="#1F4E79"/><path d="M5 29 Q9.5 25.5 14 29 T23 29 T33 29" stroke="#1F4E79" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M5 34 Q9.5 31 14 34 T23 34 T33 34" stroke="#1F4E79" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/></svg><span class="cb-text">人工智能 × 具身智能 · 赋能海洋</span></div>
+  <p class="assertion">五种编排模式</p>
+
+  <svg class="figure" width="1660" height="620" viewBox="0 0 1660 620" fill="none">
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">ORCHESTRATION PATTERNS</text>
+
+    <!-- 分隔线 -->
+    <line x1="332" y1="70" x2="332" y2="440" stroke="#E8E6E1" stroke-width="1.5"/>
+    <line x1="664" y1="70" x2="664" y2="440" stroke="#E8E6E1" stroke-width="1.5"/>
+    <line x1="996" y1="70" x2="996" y2="440" stroke="#E8E6E1" stroke-width="1.5"/>
+    <line x1="1328" y1="70" x2="1328" y2="440" stroke="#E8E6E1" stroke-width="1.5"/>
+
+    <!-- 1 顺序 -->
+    <g>
+      <rect x="40" y="150" width="56" height="56" stroke="#101010" stroke-width="2" fill="none"/>
+      <rect x="140" y="150" width="56" height="56" stroke="#101010" stroke-width="2" fill="none"/>
+      <rect x="240" y="150" width="56" height="56" stroke="#101010" stroke-width="2" fill="none"/>
+      <line x1="96" y1="178" x2="134" y2="178" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M146 178 L 128 168 L 128 188 Z" fill="#B9B7AF"/>
+      <line x1="196" y1="178" x2="234" y2="178" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M246 178 L 228 168 L 228 188 Z" fill="#B9B7AF"/>
+      <text x="168" y="300" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#141414">顺序编排</text>
+      <text x="168" y="348" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#55534E">按固定流程一步步走</text>
+    </g>
+
+    <!-- 2 路由 -->
+    <g>
+      <path d="M500 108 L 560 156 L 500 204 L 440 156 Z" stroke="#101010" stroke-width="2" fill="none"/>
+      <line x1="500" y1="204" x2="470" y2="270" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M464 282 L 466 264 L 478 274 Z" fill="#B9B7AF"/>
+      <line x1="500" y1="204" x2="500" y2="270" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M500 282 L 490 264 L 510 264 Z" fill="#B9B7AF"/>
+      <line x1="500" y1="204" x2="530" y2="270" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M536 282 L 522 274 L 534 264 Z" fill="#B9B7AF"/>
+      <rect x="420" y="284" width="60" height="34" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+      <rect x="470" y="284" width="60" height="34" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+      <rect x="520" y="284" width="60" height="34" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+      <text x="500" y="400" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#141414">路由编排</text>
+      <text x="500" y="448" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#55534E">先分类，再分派路径</text>
+    </g>
+
+    <!-- 3 并行 -->
+    <g>
+      <line x1="740" y1="130" x2="740" y2="170" stroke="#B9B7AF" stroke-width="2.5"/>
+      <line x1="740" y1="170" x2="740" y2="230" stroke="#B9B7AF" stroke-width="2.5" stroke-dasharray="0"/>
+      <path d="M740 170 L 700 210 L 660 210" stroke="#B9B7AF" stroke-width="2.5" fill="none"/>
+      <path d="M740 170 L 780 210 L 820 210" stroke="#B9B7AF" stroke-width="2.5" fill="none"/>
+      <rect x="600" y="210" width="120" height="44" stroke="#101010" stroke-width="2" fill="none"/>
+      <rect x="760" y="210" width="120" height="44" stroke="#101010" stroke-width="2" fill="none"/>
+      <path d="M660 254 L 700 300 L 740 300" stroke="#B9B7AF" stroke-width="2.5" fill="none"/>
+      <path d="M820 254 L 780 300 L 740 300" stroke="#B9B7AF" stroke-width="2.5" fill="none"/>
+      <line x1="740" y1="300" x2="740" y2="330" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M740 342 L 730 324 L 750 324 Z" fill="#B9B7AF"/>
+      <rect x="680" y="344" width="120" height="44" stroke="#101010" stroke-width="2" fill="none"/>
+      <text x="740" y="460" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#141414">并行编排</text>
+      <text x="740" y="508" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#55534E">多个环节同时推进</text>
+    </g>
+
+    <!-- 4 规划 -->
+    <g>
+      <rect x="980" y="100" width="200" height="52" stroke="#101010" stroke-width="2" fill="none"/>
+      <text x="1080" y="134" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#141414">任务</text>
+      <line x1="1080" y1="152" x2="1080" y2="196" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M1080 208 L 1070 190 L 1090 190 Z" fill="#B9B7AF"/>
+      <rect x="980" y="210" width="200" height="52" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+      <text x="1080" y="244" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#1F4E79">拆成步骤 1 · 2 · 3</text>
+      <line x1="1080" y1="262" x2="1080" y2="306" stroke="#B9B7AF" stroke-width="2.5"/>
+      <path d="M1080 318 L 1070 300 L 1090 300 Z" fill="#B9B7AF"/>
+      <rect x="980" y="320" width="200" height="52" stroke="#101010" stroke-width="2" fill="none"/>
+      <text x="1080" y="354" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#141414">逐步执行</text>
+      <text x="1080" y="452" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#141414">规划编排</text>
+      <text x="1080" y="500" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#55534E">先拆解，再执行</text>
+    </g>
+
+    <!-- 5 多智能体 -->
+    <g>
+      <circle cx="1430" cy="140" r="46" stroke="#101010" stroke-width="2" fill="none"/>
+      <circle cx="1560" cy="230" r="46" stroke="#101010" stroke-width="2" fill="none"/>
+      <circle cx="1430" cy="320" r="46" stroke="#1F4E79" stroke-width="2.5" fill="none"/>
+      <line x1="1466" y1="172" x2="1524" y2="198" stroke="#B9B7AF" stroke-width="2"/>
+      <line x1="1466" y1="290" x2="1524" y2="264" stroke="#B9B7AF" stroke-width="2"/>
+      <line x1="1430" y1="186" x2="1430" y2="274" stroke="#B9B7AF" stroke-width="2" stroke-dasharray="6 6"/>
+      <text x="1430" y="148" text-anchor="middle" font-family="Noto Sans SC" font-size="22" fill="#55534E">分工 A</text>
+      <text x="1560" y="238" text-anchor="middle" font-family="Noto Sans SC" font-size="22" fill="#55534E">分工 B</text>
+      <text x="1430" y="328" text-anchor="middle" font-family="Noto Sans SC" font-size="22" fill="#1F4E79">分工 C</text>
+      <text x="1480" y="440" text-anchor="middle" font-family="Noto Serif SC" font-weight="600" font-size="28" fill="#141414">多智能体编排</text>
+      <text x="1480" y="488" text-anchor="middle" font-family="Noto Sans SC" font-size="24" fill="#55534E">各有分工，协作成事</text>
+    </g>
+
+    <!-- 底部横线与总结 -->
+    <line x1="0" y1="548" x2="1660" y2="548" stroke="#E8E6E1" stroke-width="1.5"/>
+    <text x="0" y="600" font-family="Noto Sans SC" font-size="27" fill="#55534E">编排回答一个问题：<tspan font-weight="500" fill="#1F4E79">什么时候用哪个模块、按什么顺序用</tspan>。</text>
+  </svg>
+
+  <p class="foot">这一步做不好，前面所有零件都只是<b>一盘散沙</b>。</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>集装箱效率纪录</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>集装箱效率纪录</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <!-- left big stat -->
+      <text x="0" y="80" font-size="26" fill="#777">2025 年 · 桥吊单机作业效率</text>
+      <text x="0" y="260" class="m" font-size="150" font-weight="700" fill="#1F4E79">62.62</text>
+      <text x="0" y="326" font-size="34" fill="#555">自然箱 / 小时</text>
+      <line x1="0" y1="390" x2="760" y2="390" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="0" y="460" font-size="28" fill="#1A1A1A">12 次刷新桥吊单机世界纪录</text>
+      <text x="0" y="516" font-size="26" fill="#777">A-TOS 智能管控 · A-ECS 设备控制</text>
+      <text x="0" y="562" font-size="26" fill="#777">全国产化自主可控 · 毫秒级响应</text>
+      <!-- right bars -->
+      <text x="880" y="90" font-size="26" fill="#1F4E79" font-weight="700">青岛港</text>
+      <rect x="880" y="110" width="810" height="96" fill="#1F4E79"/>
+      <text x="1658" y="175" class="m" font-size="40" font-weight="700" fill="#fff" text-anchor="end">62.62</text>
+      <text x="880" y="310" font-size="26" fill="#888">全球同类码头平均水平</text>
+      <rect x="880" y="330" width="540" height="96" fill="#D9D9D9"/>
+      <text x="1388" y="395" font-size="32" fill="#888">平均</text>
+      <!-- gap annotation -->
+      <line x1="1428" y1="158" x2="1428" y2="450" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6 6"/>
+      <line x1="1690" y1="158" x2="1690" y2="450" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6 6"/>
+      <text x="1559" y="500" font-size="30" font-weight="700" fill="#1F4E79" text-anchor="middle">高出 50%</text>
+      <!-- bottom -->
+      <line x1="0" y1="640" x2="1728" y2="640" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="864" y="730" font-size="28" fill="#555" text-anchor="middle">AGV 与轨道吊协同作业 · 毫秒级调度 · 全要素智能管控</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

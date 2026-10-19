@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>五领域进度总表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px;display:flex;align-items:center}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+table{border-collapse:collapse;width:1728px}
+th{font-family:'Noto Serif SC',SimSun,serif;font-size:30px;font-weight:700;color:#1F4E79;text-align:left;padding:26px 24px;border-bottom:3px solid #1F4E79}
+td{font-size:26px;color:#1A1A1A;padding:30px 24px;border-bottom:1px solid #E5E5E5}
+td:first-child{font-weight:700}
+.stage{font-weight:700;color:#1F4E79}
+.dim{color:#888}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>五领域进度总表</h1>
+  <div class="fig">
+    <table>
+      <tr>
+        <th style="width:300px">领域</th>
+        <th style="width:380px">有效作业时间窗口</th>
+        <th style="width:300px">判断依据来源</th>
+        <th style="width:340px">人员配置位置</th>
+        <th>综合阶段</th>
+      </tr>
+      <tr>
+        <td>智慧港口</td>
+        <td>已突破 · 全天候</td>
+        <td>模型</td>
+        <td>后方监督</td>
+        <td class="stage">规模化应用</td>
+      </tr>
+      <tr>
+        <td>智慧渔业</td>
+        <td>部分改善</td>
+        <td>模型加人</td>
+        <td>现场加后方</td>
+        <td class="stage">示范应用</td>
+      </tr>
+      <tr>
+        <td>水下清洗装备</td>
+        <td>部分改善</td>
+        <td>模型</td>
+        <td>后方监督</td>
+        <td class="stage">示范应用</td>
+      </tr>
+      <tr>
+        <td>海上风电运维</td>
+        <td class="dim">未突破</td>
+        <td>模型加人</td>
+        <td>现场 · 维修</td>
+        <td class="stage">示范应用</td>
+      </tr>
+      <tr>
+        <td>海洋环境预报</td>
+        <td>已突破</td>
+        <td>模型</td>
+        <td>后方</td>
+        <td class="stage">技术验证转示范</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

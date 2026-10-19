@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>三个进度指标</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>三个进度指标</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+      </defs>
+      <!-- row 1 -->
+      <text x="0" y="60" font-size="36" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">有效作业时间窗口</text>
+      <text x="0" y="108" font-size="24" fill="#777">环境条件允许作业的时间区间</text>
+      <line x1="560" y1="90" x2="1668" y2="90" stroke="#1F4E79" stroke-width="3" marker-end="url(#ar)"/>
+      <polygon points="560,90 572,83 572,97" fill="#1F4E79"/>
+      <text x="560" y="148" font-size="26" fill="#888">窗口未变</text>
+      <text x="1668" y="148" font-size="26" fill="#1F4E79" font-weight="700" text-anchor="end">窗口变宽</text>
+      <line x1="0" y1="230" x2="1728" y2="230" stroke="#E5E5E5" stroke-width="2"/>
+      <!-- row 2 -->
+      <text x="0" y="345" font-size="36" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">判断依据来源</text>
+      <text x="0" y="393" font-size="24" fill="#777">靠人的经验，还是靠模型和数据</text>
+      <line x1="560" y1="375" x2="1668" y2="375" stroke="#1F4E79" stroke-width="3" marker-end="url(#ar)"/>
+      <polygon points="560,375 572,368 572,382" fill="#1F4E79"/>
+      <text x="560" y="433" font-size="26" fill="#888">人的经验</text>
+      <text x="1668" y="433" font-size="26" fill="#1F4E79" font-weight="700" text-anchor="end">模型与数据</text>
+      <line x1="0" y1="515" x2="1728" y2="515" stroke="#E5E5E5" stroke-width="2"/>
+      <!-- row 3 -->
+      <text x="0" y="630" font-size="36" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">人员配置位置</text>
+      <text x="0" y="678" font-size="24" fill="#777">人到现场操作，还是退居后方监督</text>
+      <line x1="560" y1="660" x2="1668" y2="660" stroke="#1F4E79" stroke-width="3" marker-end="url(#ar)"/>
+      <polygon points="560,660 572,653 572,667" fill="#1F4E79"/>
+      <text x="560" y="718" font-size="26" fill="#888">现场操作</text>
+      <text x="1668" y="718" font-size="26" fill="#1F4E79" font-weight="700" text-anchor="end">后方监督</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

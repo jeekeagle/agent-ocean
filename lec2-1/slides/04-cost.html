@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P04 · 代价约束</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; height: 1080px; background: #FFFFFF; font-family: "Noto Sans SC", sans-serif; color: #1A1A1A; overflow: hidden; display: flow-root; position: relative; }
+  .assertion { margin: 96px 130px 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: 56px; color: #141414; }
+  .figure { margin: 64px 130px 0; }
+  .foot { margin: 36px 130px 0; font-size: 25px; font-weight: 300; color: #55534E; }
+  .foot b { font-weight: 500; color: #141414; }
+  .wave { position: absolute; left: 0; bottom: 20px; }
+</style>
+</head>
+<body>
+  <p class="assertion">代价约束</p>
+
+  <svg class="figure" width="1660" height="600" viewBox="0 0 1660 600" fill="none">
+    <!-- 左：作业窗口 -->
+    <text x="0" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">THE WEATHER DECIDES THE CLOCK</text>
+    <text x="0" y="95" font-family="Noto Serif SC" font-weight="600" font-size="34" fill="#141414">作业时间由<tspan fill="#1F4E79">天气和海况</tspan>决定，</text>
+    <text x="0" y="148" font-family="Noto Serif SC" font-weight="600" font-size="34" fill="#141414">不由生产计划决定</text>
+
+    <!-- 台风撤离清单 -->
+    <rect x="0" y="200" width="700" height="240" rx="4" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+    <text x="40" y="255" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#1F4E79">湛江 · 台风来临前</text>
+    <g font-family="Noto Sans SC" font-size="24" fill="#55534E">
+      <text x="40" y="310"><tspan font-family="JetBrains Mono" fill="#141414" font-weight="500">696</tspan> 名养殖作业员，全部上岸</text>
+      <text x="40" y="358">养殖辅助船，全部入港避风</text>
+      <text x="40" y="406">桁架式养殖平台，下沉 <tspan font-family="JetBrains Mono" fill="#141414" font-weight="500">3</tspan> 米</text>
+    </g>
+    <text x="0" y="495" font-family="Noto Sans SC" font-size="25" fill="#141414"><tspan font-weight="500" fill="#1F4E79">人员装备必须撤离，生产必须中断</tspan>——陆地上不可想象</text>
+
+    <!-- 右：三高 -->
+    <line x1="790" y1="30" x2="790" y2="560" stroke="#E8E6E1" stroke-width="1"/>
+    <text x="860" y="30" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#9B998F">THREE HIGHS · 三高</text>
+
+    <g>
+      <text x="860" y="115" font-family="JetBrains Mono" font-size="66" font-weight="500" fill="#1F4E79">100<tspan font-size="30" fill="#9B998F"> 亿级</tspan></text>
+      <text x="1160" y="115" font-family="Noto Sans SC" font-size="24" fill="#55534E">单个深海项目投资规模</text>
+
+      <text x="860" y="245" font-family="JetBrains Mono" font-size="66" font-weight="500" fill="#141414">15–20<tspan font-size="30" fill="#9B998F">%</tspan></text>
+      <text x="1210" y="245" font-family="Noto Sans SC" font-size="24" fill="#55534E">年度运维成本占初始造价</text>
+
+      <text x="860" y="375" font-family="JetBrains Mono" font-size="66" font-weight="500" fill="#141414">10<tspan font-size="30" fill="#9B998F"> 年+</tspan></text>
+      <text x="1070" y="375" font-family="Noto Sans SC" font-size="24" fill="#55534E">技术研发周期普遍跨度</text>
+    </g>
+
+    <line x1="860" y1="430" x2="1560" y2="430" stroke="#E8E6E1" stroke-width="1"/>
+    <text x="860" y="495" font-family="Noto Sans SC" font-size="25" fill="#55534E">东海 1 号半潜式养殖平台，造价<tspan font-family="JetBrains Mono" fill="#141414" font-weight="500"> 6000 万</tspan>——</text>
+    <text x="860" y="540" font-family="Noto Sans SC" font-size="25" fill="#141414"><tspan font-weight="500">社会资本不敢投</tspan>，公共基础设施要当「先行官」</text>
+  </svg>
+
+  <p class="foot">海洋装备的技术竞争，长期集中在<b>「能不能扛住」</b>，而不是「能不能更快」。</p>
+
+  <svg class="wave" width="1920" height="40" viewBox="0 0 1920 40" fill="none">
+    <path d="M0 20 Q 60 6 120 20 T 240 20 T 360 20 T 480 20 T 600 20 T 720 20 T 840 20 T 960 20 T 1080 20 T 1200 20 T 1320 20 T 1440 20 T 1560 20 T 1680 20 T 1800 20 T 1920 20" stroke="#E8E6E1" stroke-width="2" fill="none"/>
+  </svg>
+</body>
+</html>

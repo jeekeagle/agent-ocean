@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>约束迁移机制</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1920px 1080px;margin:0}
+@media print{html,body{width:1920px;height:1080px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#fff}
+body{width:1920px;height:1080px;overflow:hidden;display:flow-root;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;color:#1A1A1A;-webkit-font-smoothing:antialiased}
+.page{width:1920px;height:1080px;padding:70px 96px 60px;display:flex;flex-direction:column}
+h1{font-family:'Noto Serif SC','Songti SC',SimSun,serif;font-weight:700;font-size:60px;color:#1F4E79;letter-spacing:4px;line-height:1.15}
+.fig{flex:1;margin-top:36px}
+.fig svg{display:block;width:100%;height:100%}
+.m{font-family:'JetBrains Mono',Consolas,monospace}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>约束迁移机制</h1>
+  <div class="fig">
+    <svg viewBox="0 0 1728 838">
+      <!-- left constraints -->
+      <text x="0" y="60" font-size="28" fill="#555">水下清洗的约束</text>
+      <g fill="none" stroke="#777" stroke-width="2">
+        <rect x="0" y="100" width="330" height="76"/>
+        <rect x="0" y="200" width="330" height="76"/>
+        <rect x="0" y="300" width="330" height="76"/>
+        <rect x="0" y="400" width="330" height="76"/>
+        <rect x="0" y="500" width="330" height="76"/>
+      </g>
+      <g font-size="26" fill="#555">
+        <text x="30" y="148">高压</text>
+        <text x="30" y="248">浑浊</text>
+        <text x="30" y="348">有流</text>
+        <text x="30" y="448">看不见</text>
+        <text x="30" y="548">潜水作业危险</text>
+      </g>
+      <!-- big arrow -->
+      <polygon points="380,220 560,220 560,160 700,318 560,476 560,416 380,416" fill="#1F4E79" opacity="0.12"/>
+      <text x="490" y="330" font-size="32" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">迁移</text>
+      <text x="490" y="380" font-size="24" fill="#777" text-anchor="middle">不是消除</text>
+      <!-- robot bears -->
+      <rect x="740" y="100" width="420" height="476" fill="none" stroke="#1F4E79" stroke-width="3"/>
+      <text x="950" y="160" font-size="30" font-weight="700" fill="#1F4E79" text-anchor="middle" font-family="Noto Serif SC,SimSun,serif">机器人承受</text>
+      <g font-size="26" fill="#555">
+        <text x="780" y="240">机体承受水压</text>
+        <text x="780" y="310">浑水中凭传感器作业</text>
+        <text x="780" y="380">顶流稳住姿态</text>
+        <text x="780" y="450">软目标精细贴合作业</text>
+        <text x="780" y="520">判断装进身体里</text>
+      </g>
+      <!-- human position -->
+      <text x="1240" y="60" font-size="28" fill="#555">人的新位置</text>
+      <text x="1240" y="160" font-size="34" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">人退到船上</text>
+      <g font-size="26" fill="#555">
+        <text x="1240" y="240">看屏幕 · 做监督</text>
+        <text x="1240" y="300">不再直接操作</text>
+        <text x="1240" y="360">只处理异常与决策</text>
+      </g>
+      <line x1="1240" y1="420" x2="1728" y2="420" stroke="#E5E5E5" stroke-width="2"/>
+      <g font-size="24" fill="#999">
+        <text x="1240" y="480">贴没贴上 · 机器人自知</text>
+        <text x="1240" y="520">洗没洗净 · 机器人自判</text>
+        <text x="1240" y="560">角度调整 · 机器人自调</text>
+      </g>
+      <!-- bottom -->
+      <line x1="0" y1="650" x2="1728" y2="650" stroke="#E5E5E5" stroke-width="2"/>
+      <text x="0" y="730" font-size="30" font-weight="700" fill="#1F4E79" font-family="Noto Serif SC,SimSun,serif">行动权转移：靠身体，不靠算法</text>
+      <text x="0" y="790" font-size="26" fill="#777">海洋对身体的限制是物理性的 — 软件绕不过去</text>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
